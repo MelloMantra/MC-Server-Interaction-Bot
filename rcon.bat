@@ -43,6 +43,7 @@ if %hour% gtr 22 (
 
 :: close if server off
 if not exist on.txt (
+    echo Server stopped (automatically) on %date% at %time%
     exit
 )
 
