@@ -1,6 +1,19 @@
 @echo off
+title "Maintainer"
+
+set uptime = 0
 
 :loop
+
+:: timer increment
+timeout /t 1 /nobreak
+set /a uptime = %uptime%+1
+if %uptime%==600 (
+    taskkill /f /im py.exe
+    taskkill /f /im python.exe
+    goto restart
+)
+echo Listener uptime: %uptime%
 
 :: detect if server off
 tasklist |findstr /ibc:"java.exe" || del on.txt
