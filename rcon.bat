@@ -1,4 +1,5 @@
 @echo off
+title "RCON Script"
 
 :: wait for server to start
 timeout /t 6 /nobreak
@@ -43,7 +44,7 @@ if %hour% gtr 22 (
 
 :: close if server off
 if not exist on.txt (
-    echo Server stopped (automatically) on %date% at %time%
+    echo "Server stopped (automatically) on %date% at %time%." >>log.txt
     exit
 )
 
