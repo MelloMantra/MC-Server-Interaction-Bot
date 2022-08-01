@@ -1,3 +1,5 @@
+# TIKO MY BOY
+
 #imports
 import discord
 from discord import Webhook, RequestsWebhookAdapter
