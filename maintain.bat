@@ -8,15 +8,14 @@ set uptime = 0
 :: timer increment
 timeout /t 1 /nobreak
 set /a uptime = %uptime%+1
-if %uptime%==600 (
+echo Listener uptime: %uptime%
+if %uptime% gtr 600 (
+    set /a uptime = 0
     taskkill /f /im py.exe
     taskkill /f /im python.exe
+    timeout /t 5 /nobreak
     goto restart
 )
-echo Listener uptime: %uptime%
-
-:: detect if server off
-tasklist |findstr /ibc:"java.exe" || del on.txt
 
 :: get current hour
 for /f %%a in ('Powershell -Nop -c "Get-Date -Format 'HH'"') do set getcurrHour=%%a

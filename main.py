@@ -1,6 +1,22 @@
 #start maintain script first and foremost
 import os
+import tracemalloc
 os.startfile("maintainStart.lnk")
+
+#async definitions as well idrk
+from discord import Webhook
+import aiohttp
+import asyncio
+
+async def runningResponse():
+    async with aiohttp.ClientSession() as session:
+        webhook = Webhook.from_url(url='https://discord.com/api/webhooks/1003143955375992982/kvR632d4DmeZncskRgH6IHvOCHxhjD6JPji7i6enJEM8u_CJs8OaiNucsYDZeSGLlcBi', session=session)
+    await webhook.send(content='Start request recieved... Error: Server already running!', username='Big SMP')
+
+async def startingResponse():
+    async with aiohttp.ClientSession() as session:
+        webhook = Webhook.from_url(url='https://discord.com/api/webhooks/1003143955375992982/kvR632d4DmeZncskRgH6IHvOCHxhjD6JPji7i6enJEM8u_CJs8OaiNucsYDZeSGLlcBi', session=session)
+    await webhook.send(content='Start request recieved... Server starting in 10 seconds!', username='Big SMP')
 
 #imports
 import cmd
@@ -11,10 +27,6 @@ import json
 import threading
 import time
 import subprocess
-
-#script to make sure the python script is running
-#subprocess.run("maintain.bat", shell=True)
-#os.startfile("maintainStart.lnk")
 
 #function definitions
 def sendJsonRequest(ws, request):
@@ -73,8 +85,14 @@ while True:
             print('Server start request recieved')
             if os.path.exists('on.txt'):
                 print('Server already running!')
+
+                runningResponse()
+
             else:
                 print('Starting server...')
+
+                startingResponse()
+
                 subprocess.run("serverinit.bat", shell=True)
         opCode = event('op')
         if opCode==11:
@@ -83,3 +101,4 @@ while True:
         pass
 
 #agacsvndfjhsagnedvfhjsdfr
+
