@@ -52,4 +52,4 @@ async def mckill(ctx):
         await ctx.send('Server stop request recieved... Error: Server is already off!')
 
 # run
-bot.run('MTAwMzUzMjQxMTM1Njg0NDE0Mg.GYVLat.t7u2Eb8eNooXy-ViutLXVW2QOWByrlfP_466d4')
+bot.run('token')
