@@ -1,5 +1,5 @@
 # Minecraft Server Uptime Manager
-A tool for managing your Minecraft server's uptime. Currently a personal project only.
+A tool for managing your Minecraft server's uptime. Written mostly in Python, with several batch helper files. Currently a personal project only.
 
 ## Introduction
 This project. This **stupid, bug infested project.**
