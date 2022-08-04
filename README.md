@@ -11,9 +11,9 @@ I started this around the end of June, 2022, and still am not finished working o
 #### Default Prefix: **.**
 
 #### Commands:
-- ping............Pings the bot, bot responds with "pongers"
-- mcstart.........Requests to start the server, bot responds with server status
-- mckill..........Requests to stop the server (admin only), bot responds with server status
+- `ping`............Pings the bot, bot responds with "pongers"
+- `mcstart`.........Requests to start the server, bot responds with server status
+- `mckill`..........Requests to stop the server (admin only), bot responds with server status
 
 ## Method 2: Using the Discord gateway filtration system **(BETA)**
 **This method is dumb, stupid, bad, and braindead, why would anyone ever use it.**
