@@ -8,7 +8,7 @@ I started this around the end of June, 2022, and still am not finished working o
 ## Method 1: Using the bot
 **This method is recommended under all circumstances,** however, it only works for my own personal use (because I haven't coded in the ability to change directories based on the user). This method allows for users to execute  commands to interact with the Minecraft server (plus "ping" which is basically mandatory lol). If you really want to try to use the bot right now, you can click [here.](https://discord.com/api/oauth2/authorize?client_id=1003532411356844142&permissions=8&scope=bot)
 
-#### Default Prefix: **.**
+#### Default Prefix: **`.`**
 
 #### Commands:
 - `ping`............Pings the bot, bot responds with "pongers"
