@@ -28,3 +28,4 @@ Ok fine there is one practical use for it. If you would like to trigger the syst
 - **Method 2** is now working (almost) flawlessly, but there are still some optimizations to be made.
 - The bot is getting worked on daily, and I will continue to add new features to my heart's content.
 - I have not pushed any changes to the repo in the past 2 weeks, but i will as soon as possible.
+- I still have not made any progress on external user compatibility yet.
