@@ -23,3 +23,7 @@ I started this around the end of June, 2022, and still am not finished working o
 Ok fine there is one practical use for it. If you would like to trigger the system via DMs or a group chat and/or any Discord server without inviting a bot. PLEASE NOTE that this method can recieve a command from **anywhere on Discord.** What I mean by that is that this method sifts through every single message you recieve, whether that be DMs, server messages, and even servers that you have muted or have notifications on "@mentions only". Also note that **this is a Beta version.** This system will be prone to bugs, crashes, and overall jankiness while I figure out how to make it run smoothly. But until then, just use the damn bot, it's so much simpler.
 
 *External user compatibility coming soon!*
+
+##Updates on progress:
+**Method 2** is now working (almost) flawlessly, but there are still some optimizations to be made.
+The bot is getting worked on daily, and I will continue to add new features to my heart's content.
