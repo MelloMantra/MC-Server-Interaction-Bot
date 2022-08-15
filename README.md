@@ -25,5 +25,5 @@ Ok fine there is one practical use for it. If you would like to trigger the syst
 *External user compatibility coming soon!*
 
 ## Updates on progress:
-**Method 2** is now working (almost) flawlessly, but there are still some optimizations to be made.
-The bot is getting worked on daily, and I will continue to add new features to my heart's content.
+- **Method 2** is now working (almost) flawlessly, but there are still some optimizations to be made.
+- The bot is getting worked on daily, and I will continue to add new features to my heart's content.
