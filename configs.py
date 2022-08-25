@@ -3,6 +3,6 @@
 TOKEN = 'token'
 PREFIX = '.'
 PATH = r'C:\\path'
-LOG = logchannelid
-TICKETLOG = ticketschannelid
+LOG = 'log channel id #'
+TICKETLOG = 'tickets channel id #'
 #etc.
