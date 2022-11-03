@@ -2,10 +2,7 @@
 
 #imports
 import discord
-from discord import Webhook, RequestsWebhookAdapter
 from discord.ext import commands
-import aiohttp
-import asyncio
 import os.path
 import os
 
