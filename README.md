@@ -6,7 +6,7 @@ This project. This **stupid, bug infested project.**
 I started this around the end of June, 2022, and still am not finished working out all of the bugs. Insects aside, I have established two methods for using this package.
 
 ## Method 1: Using the bot
-**This method is recommended under all circumstances,** however, it only works for my own personal use (because I haven't coded in the ability to change directories based on the user, and other customization stuff). This method allows for users to execute  commands to interact with the Minecraft server (plus "ping" which is basically mandatory lol). If you really want to try to use the bot right now, you can click [here.]([https://discord.com/oauth2/authorize?client_id=1003532411356844142])
+**This method is recommended under all circumstances,** however, it only works for my own personal use (because I haven't coded in the ability to change directories based on the user, and other customization stuff). This method allows for users to execute  commands to interact with the Minecraft server (plus "ping" which is basically mandatory lol). If you really want to try to use the bot right now, you can click [here.](https://discord.com/oauth2/authorize?client_id=1003532411356844142)
 
 #### Default Prefix: **`.`**
 
