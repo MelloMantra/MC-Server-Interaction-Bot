@@ -1,4 +1,5 @@
 # REVAMP SOON
+like bro how is 41% of the project written in batch
 
 # Minecraft Server Uptime Manager
 A tool for managing your Minecraft server's uptime. Written mostly in Python, with several batch helper files. Currently a personal project only.
