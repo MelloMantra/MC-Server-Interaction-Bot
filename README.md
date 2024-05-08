@@ -2,7 +2,7 @@
 A Discord bot named Tiko, written in Python by Mello Mantra. Tiko allows Discord users to interact with a Minecraft server via Discord commands. The purpose of this repository is to display a framework for such a bot, so directory navigation and such may not work as intended when directly ported to another system. If you decide to use this code, feel free to make edits on your own copy to make it work for your system. In my case, Tiko currently runs in all his glory on a Raspberry Pi 4 (4GB) running Raspbian Linux.
 
 ## Introduction
-This bot allows users in the same guild as the bot to start a Minecraft server (if not already running) and query the status of the server. An administrator (designated by setting the `OWNER` variable in `configs.py` to the desired user's user ID) may use commands that can stop, forcefully stop, sleep, and wake the Minecraft server. The default prefix is `.`. Additionally, Tiko manages the uptime of your Minecraft server by turning it off automatically after 5 minutes of inactivity.
+This bot allows users in the same guild as the bot to start a Minecraft server (if not already running) and query the status of the server. An administrator (designated by setting the `OWNER` variable in `configs.py` to the desired user's user ID) may use commands that can stop, forcefully stop, sleep, and wake the Minecraft server. The default prefix is `.`. Additionally, Tiko manages the uptime of your Minecraft server by turning it off automatically after 5 minutes of inactivity. Additionally, Tiko automatically restarts himself every ~24 hours.
 
 ## Dependencies
 For this bot to run, the following Python libraries must be installed:
