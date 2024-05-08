@@ -1,34 +1,38 @@
-# REVAMP SOON
-like bro how is 41% of the project written in batch
-
-# Minecraft Server Uptime Manager
-A tool for managing your Minecraft server's uptime. Written mostly in Python, with several batch helper files. Currently a personal project only.
+# Minecraft Server Interaction Bot
+A Discord bot named Tiko, written in Python by Mello Mantra. Tiko allows Discord users to interact with a Minecraft server via Discord commands. The purpose of this repository is to display a framework for such a bot, so directory navigation and such may not work as intended when directly ported to another system. If you decide to use this code, feel free to make edits on your own copy to make it work for your system. In my case, Tiko currently runs in all his glory on a Raspberry Pi 4 (4GB) running Raspbian Linux.
 
 ## Introduction
-This project. This **stupid, bug infested project.**
-I started this around the end of June, 2022, and still am not finished working out all of the bugs. Insects aside, I have established two methods for using this package.
+This bot allows users in the same guild as the bot to start a Minecraft server (if not already running) and query the status of the server. An administrator (designated by setting the `OWNER` variable in `configs.py` to the desired user's user ID) may use commands that can stop, forcefully stop, sleep, and wake the Minecraft server. The default prefix is `.`.
 
-## Method 1: Using the bot
-**This method is recommended under all circumstances,** however, it only works for my own personal use (because I haven't coded in the ability to change directories based on the user, and other customization stuff). This method allows for users to execute  commands to interact with the Minecraft server (plus "ping" which is basically mandatory lol). If you really want to try to use the bot right now, you can click [here.](https://discord.com/oauth2/authorize?client_id=1003532411356844142)
+## Dependencies
+For this bot to run, the following Python libraries must be installed:
 
-#### Default Prefix: **`.`**
+- `pycord`
+- `mctools`
+- `asyncio`
+- `public_ip`
+- `platform`
+- `datetime`
 
-#### Commands:
-- `ping`............Pings the bot, bot responds with "pongers"
-- `mcstart`.........Requests to start the server, bot responds with server status
-- `mckill`..........Requests to stop the server (admin only), bot responds with server status
+## Usage
+Listed below are the commands that can be issued followed by their function.
 
-## Method 2: Using the Discord gateway filtration system **(BETA)**
-**This method is dumb, stupid, bad, and braindead, why would anyone ever use it.**
+#### Minecraft Server Commands
+- `.mc <option>` - Query the status of the Minecraft server. Returns status, version, and IP address with no arguments. The `/a` option appends the seed, world style, difficulty, allocated RAM, latency, and online players of the server. The `/b` option replaces the original status message with a brief, one line summary, displaying status and player count.
+- `.start` - Starts the Minecraft server, unless already online or asleep.
+- *`.stop` - Stops the Minecraft server, unless already off.
+- *`.kill <option>` - The `option` is required. With the `/f` option, forcefully stops the Minecraft server, unless already off. With the `/s` option, it forcefully stops the Minecraft server and puts it into sleep mode, unless already asleep. Sleep mode prevents the `.start` and `.stop` commands from functioning. When this command is used with the `/w` option, the server is awakened from its slumber, unless already awake.
+- *`.cli "<argument>"` - Executes `argument` on the Minecraft server command line (unless offline). Arguments with spaces must be enclosed in double quotes.
+- *`.world <option>` - Non-functioning command to swap between world files. **WIP**.
+- *`.motd "<argument>"` - Sets the Minecraft server MOTD to `argument`. Arguments with spaces must be enclosed in double quotes.
+- *`.log <x>` - Displays the last `x` lines of the Minecraft server log file.
 
-...
+#### Other Commands
+- `.ping` - Pings the bot and returns latency.
+- *`.push` - Pushes all current changes to the connected GitHub repository. This is rarely used.
+- *`.pull` - Pulls all updated files from the connected GitHub repository and overwrites existing files, except for the log file.
 
-Ok fine there is one practical use for it. If you would like to trigger the system via DMs or a group chat and/or any Discord server without inviting a bot. PLEASE NOTE that this method can recieve a command from **anywhere on Discord.** What I mean by that is that this method sifts through every single message you recieve, whether that be DMs, server messages, and even servers that you have muted or have notifications on "@mentions only". Also note that **this is a Beta version.** This system will be prone to bugs, crashes, and overall jankiness while I figure out how to make it run smoothly. But until then, just use the damn bot, it's so much simpler.
+*Administrator privileges required
 
-*External user compatibility coming soon!*
-
-## Updates on progress:
-- **Method 2** is now working (almost) flawlessly, but there are still some optimizations to be made.
-- The bot is getting worked on daily, and I will continue to add new features to my heart's content.
-- I have not pushed any changes to the repo in the past 2 weeks, but i will as soon as possible.
-- I still have not made any progress on external user compatibility yet.
+## Notes
+:)
