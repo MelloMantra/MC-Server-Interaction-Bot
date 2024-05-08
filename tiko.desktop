@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Tiko
+Exec=/usr/bin/bash xdg-open /home/tiko/Desktop/Tiko/Tiko-bot/bot.py
+
+# Move this file to ~/.config/autostart to start Tiko on RasPi reboot.

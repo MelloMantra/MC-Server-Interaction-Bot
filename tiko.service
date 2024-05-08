@@ -1,0 +1,13 @@
+[Unit]
+Description=Tiko bot service
+After=multi-user.target
+
+[Service]
+User=tiko
+ExecStartPre=/bin/sleep 30
+ExecStart=/usr/bin/python3 /home/tiko/Desktop/Tiko/Tiko-bot/AUTO-OTTO.py
+
+[Install]
+WantedBy=multi-user.target
+
+# Move to /lib/systemd/system and issue "sudo systemctl daemon-reload command" to ensure Tiko starts on normal boot.
