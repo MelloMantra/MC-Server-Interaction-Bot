@@ -10,6 +10,7 @@ For this bot to run, the following Python libraries must be installed:
 - `pycord`
 - `mctools`
 - `asyncio`
+- `subprocess`
 - `public_ip`
 - `platform`
 - `datetime`
