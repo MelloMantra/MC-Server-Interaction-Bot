@@ -118,10 +118,10 @@ MCSERVERIP = ipget()
 PORT = 25565 # port mc server runs on
 MCVERSION = "1.20.4"
 MCWORLD = "Survival World"
-RAM = 3500
+RAM = 4000
 BTYPE = "M" # M for megabytes (mc server ram)
-SEED = 5725278669895177205
-RPWD = 'passcode' # rcon password
+SEED = 1111111111111111111
+RPWD = 'password' # rcon password
 DIFF = "hard"
 
 # bot vars
